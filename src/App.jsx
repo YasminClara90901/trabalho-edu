@@ -2,7 +2,7 @@ import { useState } from 'react'
 import SearchBar from './components/SearchBar.jsx'
 import ItemCard from './components/ItemCard.jsx'
 
-// Lista inicial com 5 registros, conforme pedido no desafio (4 a 6 itens).
+//lista dos livros
 const itensIniciais = [
   { id: 1, titulo: 'Dom Casmurro', categoria: 'Romance', responsavel: 'Machado de Assis', status: 'Disponível' },
   { id: 2, titulo: 'O Hobbit', categoria: 'Fantasia', responsavel: 'J.R.R. Tolkien', status: 'Emprestado' },
@@ -12,16 +12,16 @@ const itensIniciais = [
 ]
 
 function App() {
-  // Estado central: lista de itens e termo de busca.
+  // estado central> lista de itens e termo de busca.
   const [itens, setItens] = useState(itensIniciais)
   const [termoBusca, setTermoBusca] = useState('')
 
-  // Estados do formulário de novo item.
+  // estados para criar um cadastro novo
   const [novoTitulo, setNovoTitulo] = useState('')
   const [novaCategoria, setNovaCategoria] = useState('')
   const [novoResponsavel, setNovoResponsavel] = useState('')
 
-  // Filtragem em tempo real: recalculada a cada render, sem clique em botão.
+  // filtragem da barra de pesquisa sem ter que clicar 
   const itensFiltrados = itens.filter((item) =>
     item.titulo.toLowerCase().includes(termoBusca.toLowerCase())
   )
