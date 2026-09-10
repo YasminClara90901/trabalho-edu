@@ -1,5 +1,4 @@
-// Componente de Card: apenas exibe os dados recebidos via props.
-// Não guarda estado próprio, só renderiza o que o pai (App) manda.
+// so mostra os promps
 function ItemCard({ item }) {
   return (
     <div className="card">

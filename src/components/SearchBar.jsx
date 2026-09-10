@@ -1,5 +1,5 @@
 // Componente isolado responsável por capturar o texto de busca.
-// Recebe o valor atual e a função de atualização via props (vindos do App).
+// Recebe o valor atual e a função de atualização via props 
 function SearchBar({ termoBusca, aoDigitar }) {
   return (
     <input
