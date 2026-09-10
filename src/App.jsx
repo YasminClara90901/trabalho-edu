@@ -23,8 +23,9 @@ function App() {
 
   // filtragem da barra de pesquisa sem ter que clicar 
   const itensFiltrados = itens.filter((item) =>
-    item.titulo.toLowerCase().includes(termoBusca.toLowerCase())
-  )
+  item.titulo.toLowerCase().includes(termoBusca.toLowerCase()) ||
+  item.categoria.toLowerCase().includes(termoBusca.toLowerCase())
+)
 
   function adicionarItem(e) {
     e.preventDefault()
