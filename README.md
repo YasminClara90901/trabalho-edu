@@ -3,7 +3,7 @@
 Aplicação web de página única que simula um catálogo de livros, com busca em tempo real e cadastro dinâmico de novos itens, desenvolvida como atividade prática da disciplina de Desenvolvimento Front-end.
 
 ## Integrantes da Equipe
-- [Nome do Aluno 1]
+- Yasmin
 - [Nome do Aluno 2]
 - [Nome do Aluno 3]
 
